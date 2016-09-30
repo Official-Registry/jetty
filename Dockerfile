@@ -8,6 +8,9 @@ MAINTAINER github.com/Official-Registry, lizhongwen1989@gmail.com
 
 ENV JETTY_VERSION=9.3.11.v20160721
 ENV JETTY_HOME=/opt/app/jetty
+ENV JAVA_DEBUG=false
+ENV JVM_MIN_MEM=256
+ENV JVM_MAX_MEM=1024
 
 EXPOSE 8080 8888
 
