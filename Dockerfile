@@ -19,7 +19,7 @@ RUN curl --fail --location --retry 3 \
   -o /tmp/jetty.tar.gz \
   && tar -zvxf /tmp/jetty.tar.gz -C /tmp/ \
   && mkdir -p /opt/app/ \
-  && mv /tmp/jetty-distribution-${JETTY_VERSSION} ${JETTY_HOME} \
+  && mv /tmp/jetty-distribution-${JETTY_VERSION} ${JETTY_HOME} \
   && rm -rf /tmp/jetty.tar.gz ${JETTY_HOME}/webapps/*.war ${JETTY_HOME}/contexts/* ${JETTY_HOME}/contexts-available/* ${JETTY_HOME}/javadoc
 
 ADD resources/entrypoint.sh ${JETTY_HOME}/bin/
